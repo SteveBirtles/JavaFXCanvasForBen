@@ -17,8 +17,8 @@ import java.util.Set;
 
 public class Main extends Application {
 
-    public static final int WINDOW_WIDTH = 1024;
-    public static final int WINDOW_HEIGHT = 768;
+    public static final int WINDOW_WIDTH = 1280;
+    public static final int WINDOW_HEIGHT = 1024;
 
     static Set<KeyCode> keysPressed = new HashSet<>();
 
@@ -38,6 +38,7 @@ public class Main extends Application {
 
             stage.setTitle("JavaFX Canvas Demo");
             stage.setResizable(false);
+            stage.setFullScreen(true);
             stage.setScene(scene);
             stage.setOnCloseRequest(we -> {
                 System.out.println("Close button was clicked!");
